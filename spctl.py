@@ -1,7 +1,5 @@
 import math as np
 print("hello")
-y = np.tan(31 * np.pi / 64)
-print(y)
 agree = 31 * np.pi / 64
 a1 =  -1 * np.pi / 2
 y11 = 0
@@ -20,20 +18,6 @@ x21 =  (-1 * 13 * np.tan(agree) - x12 * np.tan(a2) + y12) / (np.tan(agree) - np.
 y21 =  np.tan(agree) * (x21 + 13)
 x22 =  (13 * np.tan(agree) + x21 * np.tan(2 * agree - a2) - y21) / (np.tan(agree) + np.tan(2 * agree - a2))
 y22 =  -1 * np.tan(agree) * (x22 - 13)
-print(a2)
-print(np.tan(a2))
-print("x12")
-print(x12)
-print("y12")
-print(y12)
-print("x21")
-print(x21)
-print("y21")
-print(y21)
-print("x22")
-print(x22)
-print("y22")
-print(y22)
 count = 0
 for var in range(0, n):
     a2 = a1 - 4 * agree
@@ -42,6 +26,7 @@ for var in range(0, n):
     x22 =  (13 * np.tan(agree) + x21 * np.tan(2 * agree - a2) - y21) / (np.tan(agree) + np.tan(2 * agree - a2))
     y22 =  -1 * np.tan(agree) * (x22 - 13)
 
+    print("")
     print(a2, end = "")
     print(np.tan(a2))
     print("x", end = "")
@@ -60,7 +45,6 @@ for var in range(0, n):
     print(count + 2, end = "")
     print("2 ", end = "")
     print(y22)
-    print("")
 
     a1 = a2
     x11 = x21
