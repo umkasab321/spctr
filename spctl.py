@@ -5,6 +5,8 @@ a1 =  -1 * np.pi / 2
 y11 = 0
 x11 = -13
 n = 3
+
+
 x12 = 13 * (np.tan(agree) - np.tan(agree * 2 - a1)) / (np.tan(agree) + np.tan(2 * agree - a1))
 y12 =  -1 * np.tan(agree) * (x12 - 13)
 
@@ -27,6 +29,7 @@ for var in range(0, n):
     y22 =  -1 * np.tan(agree) * (x22 - 13)
 
     print("")
+    print("-------", end = "")
     print(a2, end = "")
     print(np.tan(a2))
     print("x", end = "")
